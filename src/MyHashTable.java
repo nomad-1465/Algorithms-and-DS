@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+import java.util.*;
 
 public class MyHashTable {
 
@@ -62,4 +62,5 @@ public class MyHashTable {
             }
         }
     }
+
 }
