@@ -3,10 +3,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Graph {
+public class MyGraph {
     private int numVertices;
     private Map<Integer, List<Integer>> graphDict;
-    public Graph(int numVertices){
+    public MyGraph(int numVertices){
         this.numVertices=numVertices;
         this.graphDict=new HashMap<>();
         for(int i=0;i<numVertices;i++){
