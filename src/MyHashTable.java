@@ -1,8 +1,6 @@
-import java.util.*;
+import java.util.LinkedList;
 
 public class MyHashTable {
-
-
     private int size;
     private LinkedList<Node>[]table;
 
@@ -32,7 +30,7 @@ public class MyHashTable {
 
     public void insert(Object key, Object value){
         int index=hash_function(key);
-        LinkedList<Node>list=table[index];
+        LinkedList<Node> list=table[index];
         for(Node node:list){
             if(node.key.equals(key)){
                 node.value=value;
@@ -43,7 +41,7 @@ public class MyHashTable {
     }
     public Object get(Object key){
         int index=hash_function(key);
-        LinkedList<Node>list=table[index];
+        LinkedList<Node> list=table[index];
         for(Node node:list){
             if(node.key.equals(key)){
                 return node.value;
@@ -54,7 +52,7 @@ public class MyHashTable {
 
     public void delete(Object key){
         int index=hash_function(key);
-        LinkedList<Node>list=table[index];
+        LinkedList<Node> list=table[index];
         for(Node node:list){
             if(node.key.equals(key)){
                 list.remove(node);

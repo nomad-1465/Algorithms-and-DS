@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
+import java.util.*;
 
 public class MyBinaryTree {
     public static class Node{
@@ -77,6 +74,10 @@ public class MyBinaryTree {
 //        tree.traversePostOrder(tree.root);  //  4=>5=>2=>3=>1
 //        System.out.println("------------------------------");
 
+
+        Hashtable<String,Integer>table=new Hashtable<>();
+        table.put("Alma",5);
+        table.put("Alma",1);
         System.out.println(tree.iterative_in_order(tree.root));
 
     }
